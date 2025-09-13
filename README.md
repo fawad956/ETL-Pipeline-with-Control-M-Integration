@@ -1,5 +1,5 @@
-Automated ETL Pipeline with Control-M Integration
-Enterprise Data Integration Solution
+##Automated ETL Pipeline with Control-M Integration
+##Enterprise Data Integration Solution
 
 Project Overview
 Challenge: Manual data loading processes were causing delays and inconsistencies in critical business reporting systems. Multiple data files needed to be processed daily across six different database tables with strict data integrity requirements.
@@ -187,7 +187,7 @@ Problem-Solving Approach
         Solution Architecture: Scalable and maintainable design patterns
         Testing Strategy: Comprehensive validation across multiple environments
         Production Support: Proactive monitoring and issue resolution
-        
+
 Portfolio Integration
 This project demonstrates several key competencies relevant to modern data engineering roles:
 
