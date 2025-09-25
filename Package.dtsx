@@ -1,0 +1,1814 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/24/2025 2:11:39 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LP6GOI80"
+  DTS:CreatorName="PRD\U451202"
+  DTS:DTSID="{74684FD2-78D8-4708-9511-64B1694F55C9}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{CEF0EAE1-766E-4D5A-9CE5-E41DDE81E53A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Test1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{78C3340F-A985-4556-8704-EF7641959FB2}"
+      DTS:ObjectName="Test1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="Test1" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Test2]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{2F85DC1D-A79A-45B1-8717-75BDB00F3777}"
+      DTS:ObjectName="Test2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="Test2" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Test3]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{423C26A0-4C53-4513-AA76-05494E7211FA}"
+      DTS:ObjectName="Test3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="Test3" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Test4]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{87C4F919-3867-43DD-AFCE-571DFC55DEA2}"
+      DTS:ObjectName="Test4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="Test4" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Test5]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{92C71197-9147-489C-A90E-8F1827F3DAC3}"
+      DTS:ObjectName="Test5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="Test5" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Test6]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{C8AB49C1-792A-45E0-827D-31210D3C7FB3}"
+      DTS:ObjectName="Test6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="Test6" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Testing]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{D138153C-E1BF-4C3A-A950-3685FF8982A2}"
+      DTS:ObjectName="Testing">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="Testing" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{03431DC6-1585-4247-A256-ED7CB90741FA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Archive">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E49DE569-EBB9-4D4A-8795-88CC8A00AFC0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Database">
+      <DTS:VariableValue
+        DTS:DataType="8">test</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B404DDBE-0361-48B0-B9E7-3F3940366EB1}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="DateTime">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{18F5CEFA-FE49-4EF3-B7E1-594C374A54C8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileList">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{ACBD4C2D-22F9-4482-80DF-3004E59FF4D8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileName">
+      <DTS:VariableValue
+        DTS:DataType="8">FileList</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B5ED5404-E7C8-43D7-89C0-2DADACE13B05}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{810650FB-25A2-469F-877C-79E07CD1A497}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ServerName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{99785EAA-13AC-4502-B550-E432106C7730}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TableName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A38235A1-09BC-4E31-95F1-52EC934E8566}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{81BFC76E-EB4D-48F7-B328-8344FC199F71}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test2">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AB36373A-D876-4EB4-8214-12ED43428EFB}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test3">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{56AC9F71-0E34-48ED-A008-1295CF45C4D0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test4">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9B4A2A65-ADF7-418C-B937-0E3EFFDBC98A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test5">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{12BEDB56-0CE5-40C8-A61D-7D509165E40A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test6">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{29712943-057A-47C9-9C6A-303F28F51FEE}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Timestamp">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A5F11A03-7AFA-4F66-9D6F-B9DCB184771F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Test1"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{2638F7BC-44C8-4496-B442-ADE2216DAE83}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Test1">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachItemEnumerator"
+        DTS:DTSID="{1E88AB1F-79B9-4BD1-8060-8B9CE35AC4D5}"
+        DTS:ObjectName="{1E88AB1F-79B9-4BD1-8060-8B9CE35AC4D5}">
+        <DTS:ObjectData />
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Test1\Foreach Loop Container"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Foreach Loop Container"
+          DTS:DTSID="{F1182C22-38FB-4BE6-9F5B-C70722A9D155}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Foreach Loop Container">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Test1\Foreach Loop Container\Archiving file"
+              DTS:CreationName="Microsoft.FileSystemTask"
+              DTS:Description="File System Task"
+              DTS:DTSID="{3B485597-ED3C-48A1-9D22-F2C5E4FF8211}"
+              DTS:ExecutableType="Microsoft.FileSystemTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Archiving file"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <FileSystemData
+                  TaskSourcePath="{78C3340F-A985-4556-8704-EF7641959FB2}"
+                  TaskDestinationPath="$Project::HistoryFolder"
+                  TaskIsDestinationVariable="True" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Test1\Foreach Loop Container\Data Flow Task"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{778F7EF2-996F-4C0D-9CB9-84B1300D53AC}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Data Flow Task"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source"
+                      componentClassID="Microsoft.FlatFileSource"
+                      contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                      description="Flat File Source"
+                      name="Flat File Source"
+                      usesDispositions="true"
+                      version="1">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Specifies whether zero-length columns are treated as null."
+                          name="RetainNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                          name="FileNameColumnName"></property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                          name="FlatFileConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                          name="Flat File Source Output">
+                          <externalMetadataColumns
+                            isUsed="True" />
+                        </output>
+                        <output
+                          refId="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                          isErrorOut="true"
+                          name="Flat File Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination"
+                      componentClassID="Attunity.SSISODBCDst"
+                      description="ODBC Destination"
+                      name="ODBC Destination"
+                      usesDispositions="true"
+                      version="7">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The name of the table to be fetched."
+                          expressionType="Notify"
+                          name="TableName"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specify the number of rows fetched per batch."
+                          expressionType="Notify"
+                          name="BatchSize">1000</property>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of rows inserted under the same transaction."
+                          expressionType="Notify"
+                          name="TransactionSize">1000</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Determines the chunk size allocation for LOB columns"
+                          expressionType="Notify"
+                          name="LobChunkSize">32768</property>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                          expressionType="Notify"
+                          name="StatementTimeout">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="The code page to use when code page information is unavailable from the data source."
+                          expressionType="Notify"
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Int32"
+                          description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                          expressionType="Notify"
+                          name="InsertMethod">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="The ODBC C data type for binding numeric data."
+                          expressionType="Notify"
+                          name="BindNumericAs">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                          expressionType="Notify"
+                          name="BindCharColumnsAs">0</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination.Connections[ODBCConnection]"
+                          description="The ODBC runtime connection used to access the database."
+                          name="ODBCConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination.Inputs[ODBC Destination Input]"
+                          errorOrTruncationOperation="Insert"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="ODBC Destination Input"
+                          truncationRowDisposition="FailComponent">
+                          <externalMetadataColumns
+                            isUsed="True" />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                          isErrorOut="true"
+                          name="ODBC Destination Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\Test1\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Output]"
+                      endId="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination.Inputs[ODBC Destination Input]"
+                      name="Flat File Source Output"
+                      startId="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Test1\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{BDCE3162-1588-4C29-AE55-D682AA07038E}"
+              DTS:From="Package\Test1\Foreach Loop Container\Data Flow Task"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Test1\Foreach Loop Container\Archiving file" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Test1\truncate table test1"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{1DF02E99-846A-4698-AAA9-0F6294996557}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="truncate table test1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:SqlStatementSource="truncate table test1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Test1.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{5176510E-75E2-4B7A-9834-AB0BE734070F}"
+          DTS:From="Package\Test1\truncate table test1"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Test1\Foreach Loop Container" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{BBE81323-2199-4EED-B0EA-877F70AB3427}"
+          DTS:ObjectName="{BBE81323-2199-4EED-B0EA-877F70AB3427}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Test1" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Test2"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{cdc1202f-a400-4d04-bd5d-6e5b67f69237}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Test2">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachItemEnumerator"
+        DTS:DTSID="{3c56ab3a-807f-489c-9d40-8c7be2dd7607}"
+        DTS:ObjectName="{1E88AB1F-79B9-4BD1-8060-8B9CE35AC4D5}">
+        <DTS:ObjectData />
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Test2\Foreach Loop Container"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Foreach Loop Container"
+          DTS:DTSID="{25b79ee2-a525-4bd7-986c-d862c9baae9a}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Foreach Loop Container">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Test2\Foreach Loop Container\Archiving File"
+              DTS:CreationName="Microsoft.FileSystemTask"
+              DTS:Description="File System Task"
+              DTS:DTSID="{ed8c3747-b9f5-440f-a8a0-bf372801b6f9}"
+              DTS:ExecutableType="Microsoft.FileSystemTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Archiving File"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <FileSystemData
+                  TaskSourcePath="{2F85DC1D-A79A-45B1-8717-75BDB00F3777}"
+                  TaskDestinationPath="$Project::HistoryFolder"
+                  TaskIsDestinationVariable="True" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Test2\Foreach Loop Container\Data Flow Task"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{b1783308-8858-4753-b72c-7c275bfc5e64}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Data Flow Task"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Test2\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{2cdb8391-c830-4da8-84da-d78738323c8f}"
+              DTS:From="Package\Test2\Foreach Loop Container\Data Flow Task"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Test2\Foreach Loop Container\Archiving File" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Test2\truncate table test2"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{13659bed-5080-487f-b3be-e09ee2fc4d9f}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="truncate table test2"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:SqlStatementSource="truncate table test2" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Test2.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{3ba33383-a6ea-4cb4-b6d0-36d4284ebd84}"
+          DTS:From="Package\Test2\truncate table test2"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Test2\Foreach Loop Container" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{CE49A736-A135-484A-A486-8C52B2E9BABD}"
+          DTS:ObjectName="{CE49A736-A135-484A-A486-8C52B2E9BABD}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Test2" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Test3"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{ffe339aa-0efd-4b97-8575-6eee940cf535}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Test3">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachItemEnumerator"
+        DTS:DTSID="{d9aad845-bf39-4f19-aa2a-92523a516272}"
+        DTS:ObjectName="{1E88AB1F-79B9-4BD1-8060-8B9CE35AC4D5}">
+        <DTS:ObjectData />
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Test3\Foreach Loop Container"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Foreach Loop Container"
+          DTS:DTSID="{dbe87163-1a4e-4f9a-a589-caf442b45897}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Foreach Loop Container">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Test3\Foreach Loop Container\Archiving File"
+              DTS:CreationName="Microsoft.FileSystemTask"
+              DTS:Description="File System Task"
+              DTS:DTSID="{8234fd95-ff64-4b60-8054-9de305d5681e}"
+              DTS:ExecutableType="Microsoft.FileSystemTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Archiving File"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <FileSystemData
+                  TaskSourcePath="{423C26A0-4C53-4513-AA76-05494E7211FA}"
+                  TaskDestinationPath="$Project::HistoryFolder"
+                  TaskIsDestinationVariable="True" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Test3\Foreach Loop Container\Data Flow Task"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{1749f7a3-970a-4e21-b40e-8ba383f85991}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Data Flow Task"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Test3\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{aa1cb94a-d9c6-440f-80d2-d72674cc5e56}"
+              DTS:From="Package\Test3\Foreach Loop Container\Data Flow Task"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Test3\Foreach Loop Container\Archiving File" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Test3\truncate table test3"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{9573f421-2ec7-4e86-b88f-663c8e10fca3}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="truncate table test3"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:SqlStatementSource="truncate table test3" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Test3.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{f47db247-ba5a-47f2-892d-0d7bfdefe9c4}"
+          DTS:From="Package\Test3\truncate table test3"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Test3\Foreach Loop Container" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{219D4CE9-F082-48BE-8494-B653E2D743AD}"
+          DTS:ObjectName="{219D4CE9-F082-48BE-8494-B653E2D743AD}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Test3" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Test4"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{c864f90e-2a7b-4978-b373-d4d0de702834}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Test4">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachItemEnumerator"
+        DTS:DTSID="{cf8eba6c-6e5d-4fcf-a412-f681dcc280d4}"
+        DTS:ObjectName="{1E88AB1F-79B9-4BD1-8060-8B9CE35AC4D5}">
+        <DTS:ObjectData />
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Test4\Foreach Loop Container"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Foreach Loop Container"
+          DTS:DTSID="{8243c95d-d29a-453d-a7e4-c553dc7ba1be}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Foreach Loop Container">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Test4\Foreach Loop Container\Archiving File"
+              DTS:CreationName="Microsoft.FileSystemTask"
+              DTS:Description="File System Task"
+              DTS:DTSID="{86142b0c-23f1-4b84-b452-800cf525a84f}"
+              DTS:ExecutableType="Microsoft.FileSystemTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Archiving File"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <FileSystemData
+                  TaskSourcePath="{87C4F919-3867-43DD-AFCE-571DFC55DEA2}"
+                  TaskDestinationPath="$Project::HistoryFolder"
+                  TaskIsDestinationVariable="True" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Test4\Foreach Loop Container\Data Flow Task"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{07d4f334-30e1-406c-9abb-653d5926bdb7}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Data Flow Task"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Test4\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{2a1bd23b-fefb-4a16-b65b-3f59bb3c8b43}"
+              DTS:From="Package\Test4\Foreach Loop Container\Data Flow Task"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Test4\Foreach Loop Container\Archiving File" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Test4\truncate table test4"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{c05a04fb-7171-40c3-95ee-b7dd46829ee8}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="truncate table test4"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:SqlStatementSource="truncate table test" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Test4.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{6d931158-04c2-4e57-b716-47d6c849cf42}"
+          DTS:From="Package\Test4\truncate table test4"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Test4\Foreach Loop Container" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{D78C741F-C5F0-4EB1-9620-53D5A9564138}"
+          DTS:ObjectName="{D78C741F-C5F0-4EB1-9620-53D5A9564138}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Test4" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Test5"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{b67625af-ceba-43e5-b20b-178e0cc9a3e0}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Test5">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachItemEnumerator"
+        DTS:DTSID="{ce20b97f-5f01-4f5c-bace-890f5a6e4917}"
+        DTS:ObjectName="{1E88AB1F-79B9-4BD1-8060-8B9CE35AC4D5}">
+        <DTS:ObjectData />
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Test5\Foreach Loop Container"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Foreach Loop Container"
+          DTS:DTSID="{2dc7f0b6-4aa7-4bf0-9531-c1c63ae308e7}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Foreach Loop Container">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Test5\Foreach Loop Container\Archiving File"
+              DTS:CreationName="Microsoft.FileSystemTask"
+              DTS:Description="File System Task"
+              DTS:DTSID="{5b03b232-37b5-4b1d-b778-a5611e887bc3}"
+              DTS:ExecutableType="Microsoft.FileSystemTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Archiving File"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <FileSystemData
+                  TaskSourcePath="{92C71197-9147-489C-A90E-8F1827F3DAC3}"
+                  TaskDestinationPath="$Project::HistoryFolder"
+                  TaskIsDestinationVariable="True" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Test5\Foreach Loop Container\Data Flow Task"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{18f388b3-9a75-4a3c-a41b-d73f593d7119}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Data Flow Task"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Test5\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{90d88d5b-d56d-49af-a566-57d228639c9a}"
+              DTS:From="Package\Test5\Foreach Loop Container\Data Flow Task"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Test5\Foreach Loop Container\Archiving File" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Test5\truncate table test5"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{cc663e2b-05d8-42ae-ab91-6aa58dffc7fa}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="truncate table test5"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:SqlStatementSource="truncate table test5" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Test5.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{393ea3a0-0eef-4c04-ac71-1998848d35ff}"
+          DTS:From="Package\Test5\truncate table test5"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Test5\Foreach Loop Container" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{81EB8D21-87EF-4D38-A68C-D7382AF95CF1}"
+          DTS:ObjectName="{81EB8D21-87EF-4D38-A68C-D7382AF95CF1}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Test5" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Test6"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{9ed08244-9003-4973-98db-8551d2bd189c}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Test6">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachItemEnumerator"
+        DTS:DTSID="{863292b0-2a81-4eac-95de-081716fc91a8}"
+        DTS:ObjectName="{1E88AB1F-79B9-4BD1-8060-8B9CE35AC4D5}">
+        <DTS:ObjectData />
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Test6\Foreach Loop Container"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Foreach Loop Container"
+          DTS:DTSID="{9173206c-b78e-4eb3-91d1-b822ef8ff643}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Foreach Loop Container">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Test6\Foreach Loop Container\Archiving File"
+              DTS:CreationName="Microsoft.FileSystemTask"
+              DTS:Description="File System Task"
+              DTS:DTSID="{f8f950be-0113-4553-be46-418dd544c249}"
+              DTS:ExecutableType="Microsoft.FileSystemTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Archiving File"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <FileSystemData
+                  TaskSourcePath="{C8AB49C1-792A-45E0-827D-31210D3C7FB3}"
+                  TaskDestinationPath="$Project::HistoryFolder"
+                  TaskIsDestinationVariable="True" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Test6\Foreach Loop Container\Data Flow Task"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{ff66dbbb-2c4e-46dd-9071-f8d4ed27a8af}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Data Flow Task"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Test6\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{09a30049-d402-4b42-b33d-284ffa953048}"
+              DTS:From="Package\Test6\Foreach Loop Container\Data Flow Task"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Test6\Foreach Loop Container\Archiving File" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Test6\truncate table test6"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{e3300f92-5356-4066-8518-a292fe852be9}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="truncate table test6"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:SqlStatementSource="truncate table test6" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Test6.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{7f884d5f-a628-40fd-af7a-5a4dda2496b3}"
+          DTS:From="Package\Test6\truncate table test6"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Test6\Foreach Loop Container" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{5958A486-150B-4444-A7A5-81C7E3267125}"
+          DTS:ObjectName="{5958A486-150B-4444-A7A5-81C7E3267125}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Test6" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{40E7C26C-7B8B-45C9-9FA5-A9F35DF45DF0}"
+      DTS:From="Package\Test1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Test2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{7928DBBC-B0A4-48D0-BAD9-55939326E6BA}"
+      DTS:From="Package\Test2"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Test3" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{E6CBAE78-62CE-49CC-B9B3-FEC9A6D48F62}"
+      DTS:From="Package\Test3"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Test6" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{1BBD29D2-CA00-4694-A697-64553C9091D2}"
+      DTS:From="Package\Test6"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Test5" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{41CE2471-3594-4079-85DE-1EFC9D3180D0}"
+      DTS:From="Package\Test5"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Test4" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Test1\Foreach Loop Container\Data Flow Task"
+          TopLeft="71.9166612836222,12.2333294667801" />
+        <NodeLayout
+          Size="140,42.6666666666667"
+          Id="Package\Test1\Foreach Loop Container\Archiving file"
+          TopLeft="69.8333279813329,87.1999947929384" />
+        <EdgeLayout
+          Id="Package\Test1\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="147.916661283622,54.8999961334468">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.0833333022893,32.2999986594916"
+              Start="0,0"
+              End="-8.0833333022893,24.7999986594916">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.1499993297458" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.1499993297458"
+                    Point2="0,16.1499993297458"
+                    Point3="-4,16.1499993297458" />
+                  <mssgle:LineSegment
+                    End="-4.0833333022893,16.1499993297458" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.0833333022893,16.1499993297458"
+                    Point2="-8.0833333022893,16.1499993297458"
+                    Point3="-8.0833333022893,20.1499993297458" />
+                  <mssgle:LineSegment
+                    End="-8.0833333022893,24.7999986594916" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="262,184.666666666667"
+          Size="262,228"
+          Id="Package\Test1\Foreach Loop Container"
+          TopLeft="49.8333290244143,87.6333304431042" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Test1\truncate table test1"
+          TopLeft="136.916661060105,11.3666651401917" />
+        <EdgeLayout
+          Id="Package\Test1.PrecedenceConstraints[Constraint]"
+          TopLeft="219.583327726772,54.0333318068584">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-38.7499987023574,33.5999986362458"
+              Start="0,0"
+              End="-38.7499987023574,26.0999986362458">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.7999993181229"
+                    Point2="0,16.7999993181229"
+                    Point3="-4,16.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-34.7499987023574,16.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-34.7499987023574,16.7999993181229"
+                    Point2="-38.7499987023574,16.7999993181229"
+                    Point3="-38.7499987023574,20.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-38.7499987023574,26.0999986362458" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="374,344"
+          Size="374,386.666666666667"
+          Id="Package\Test1"
+          TopLeft="353.749994728715,32.4999994188547" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Test2\Foreach Loop Container\Data Flow Task"
+          TopLeft="71.9166612836222,12.2333294667801" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Test2\Foreach Loop Container\Archiving File"
+          TopLeft="69.8333279813329,87.1999947929384" />
+        <EdgeLayout
+          Id="Package\Test2\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="148.541661299144,54.8999961334468">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.2999986594916"
+              Start="0,0"
+              End="0,24.7999986594916">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7999986594916" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="262,154.666666666667"
+          Size="262,197.333333333334"
+          Id="Package\Test2\Foreach Loop Container"
+          TopLeft="49.8333290244143,87.6333304431042" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Test2\truncate table test2"
+          TopLeft="136.916661060105,11.3666651401917" />
+        <EdgeLayout
+          Id="Package\Test2.PrecedenceConstraints[Constraint]"
+          TopLeft="219.583327726772,54.0333318068584">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-38.7499987023574,33.5999986362458"
+              Start="0,0"
+              End="-38.7499987023574,26.0999986362458">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.7999993181229"
+                    Point2="0,16.7999993181229"
+                    Point3="-4,16.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-34.7499987023574,16.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-34.7499987023574,16.7999993181229"
+                    Point2="-38.7499987023574,16.7999993181229"
+                    Point3="-38.7499987023574,20.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-38.7499987023574,26.0999986362458" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="374,344"
+          Size="374,386.666666666667"
+          Id="Package\Test2"
+          TopLeft="340.250001396984,469.299991608262" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Test3\Foreach Loop Container\Data Flow Task"
+          TopLeft="71.9166612836222,12.2333294667801" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Test3\Foreach Loop Container\Archiving File"
+          TopLeft="69.8333279813329,87.1999947929384" />
+        <EdgeLayout
+          Id="Package\Test3\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="148.541661299144,54.8999961334468">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.2999986594916"
+              Start="0,0"
+              End="0,24.7999986594916">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7999986594916" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="274.666666666667,170"
+          Size="274.666666666667,213.333333333334"
+          Id="Package\Test3\Foreach Loop Container"
+          TopLeft="49.8333290244143,87.6333304431041" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Test3\truncate table test3"
+          TopLeft="136.916661060105,11.3666651401917" />
+        <EdgeLayout
+          Id="Package\Test3.PrecedenceConstraints[Constraint]"
+          TopLeft="222.916661060105,54.0333318068584">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-35.7499987023574,33.5999986362458"
+              Start="0,0"
+              End="-35.7499987023574,26.0999986362458">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.7999993181229"
+                    Point2="0,16.7999993181229"
+                    Point3="-4,16.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-31.7499987023574,16.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-31.7499987023574,16.7999993181229"
+                    Point2="-35.7499987023574,16.7999993181229"
+                    Point3="-35.7499987023574,20.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-35.7499987023574,26.0999986362458" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="384.666666666667,332"
+          Size="384.666666666667,375.333333333334"
+          Id="Package\Test3"
+          TopLeft="341.750007841736,913.899983658195" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Test5\Foreach Loop Container\Data Flow Task"
+          TopLeft="71.9166612836222,12.2333294667801" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Test5\Foreach Loop Container\Archiving File"
+          TopLeft="69.8333279813329,87.1999947929384" />
+        <EdgeLayout
+          Id="Package\Test5\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="148.541661299144,54.8999961334468">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.2999986594916"
+              Start="0,0"
+              End="0,24.7999986594916">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7999986594916" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="262,154.666666666667"
+          Size="262,197.333333333334"
+          Id="Package\Test5\Foreach Loop Container"
+          TopLeft="49.8333290244143,87.6333304431042" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Test5\truncate table test5"
+          TopLeft="136.916661060105,11.3666651401917" />
+        <EdgeLayout
+          Id="Package\Test5.PrecedenceConstraints[Constraint]"
+          TopLeft="219.583327726772,54.0333318068584">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-38.7499987023574,33.5999986362458"
+              Start="0,0"
+              End="-38.7499987023574,26.0999986362458">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.7999993181229"
+                    Point2="0,16.7999993181229"
+                    Point3="-4,16.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-34.7499987023574,16.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-34.7499987023574,16.7999993181229"
+                    Point2="-38.7499987023574,16.7999993181229"
+                    Point3="-38.7499987023574,20.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-38.7499987023574,26.0999986362458" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="374,344"
+          Size="374,386.666666666667"
+          Id="Package\Test5"
+          TopLeft="854.083340007812,493.566657841007" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Test4\Foreach Loop Container\Data Flow Task"
+          TopLeft="71.9166612836222,12.2333294667801" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Test4\Foreach Loop Container\Archiving File"
+          TopLeft="69.8333279813329,87.1999947929384" />
+        <EdgeLayout
+          Id="Package\Test4\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="148.541661299144,54.8999961334468">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.2999986594916"
+              Start="0,0"
+              End="0,24.7999986594916">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7999986594916" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="262,154.666666666667"
+          Size="262,197.333333333334"
+          Id="Package\Test4\Foreach Loop Container"
+          TopLeft="49.8333290244143,87.6333304431042" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Test4\truncate table test4"
+          TopLeft="136.916661060105,11.3666651401917" />
+        <EdgeLayout
+          Id="Package\Test4.PrecedenceConstraints[Constraint]"
+          TopLeft="219.583327726772,54.0333318068584">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-38.7499987023574,33.5999986362458"
+              Start="0,0"
+              End="-38.7499987023574,26.0999986362458">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.7999993181229"
+                    Point2="0,16.7999993181229"
+                    Point3="-4,16.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-34.7499987023574,16.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-34.7499987023574,16.7999993181229"
+                    Point2="-38.7499987023574,16.7999993181229"
+                    Point3="-38.7499987023574,20.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-38.7499987023574,26.0999986362458" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="374,344"
+          Size="374,386.666666666667"
+          Id="Package\Test4"
+          TopLeft="808.08334716037,73.5666674492757" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Test6\Foreach Loop Container\Data Flow Task"
+          TopLeft="71.9166612836222,12.2333294667801" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Test6\Foreach Loop Container\Archiving File"
+          TopLeft="69.8333279813329,87.1999947929384" />
+        <EdgeLayout
+          Id="Package\Test6\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="148.541661299144,54.8999961334468">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.2999986594916"
+              Start="0,0"
+              End="0,24.7999986594916">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7999986594916" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="262,154.666666666667"
+          Size="262,197.333333333334"
+          Id="Package\Test6\Foreach Loop Container"
+          TopLeft="49.8333290244143,87.6333304431042" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Test6\truncate table test6"
+          TopLeft="136.916661060105,11.3666651401917" />
+        <EdgeLayout
+          Id="Package\Test6.PrecedenceConstraints[Constraint]"
+          TopLeft="219.583327726772,54.0333318068584">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-38.7499987023574,33.5999986362458"
+              Start="0,0"
+              End="-38.7499987023574,26.0999986362458">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.7999993181229"
+                    Point2="0,16.7999993181229"
+                    Point3="-4,16.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-34.7499987023574,16.7999993181229" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-34.7499987023574,16.7999993181229"
+                    Point2="-38.7499987023574,16.7999993181229"
+                    Point3="-38.7499987023574,20.7999993181229" />
+                  <mssgle:LineSegment
+                    End="-38.7499987023574,26.0999986362458" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="374,344"
+          Size="374,386.666666666667"
+          Id="Package\Test6"
+          TopLeft="833.833334599932,921.899983968139" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="540.749994728715,419.166666085521">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13.4999933317305,50.1333255227407"
+              Start="0,0"
+              End="-13.4999933317305,42.6333255227407">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.0666627613704" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.0666627613704"
+                    Point2="0,25.0666627613704"
+                    Point3="-4,25.0666627613704" />
+                  <mssgle:LineSegment
+                    End="-9.49999333173048,25.0666627613704" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.49999333173048,25.0666627613704"
+                    Point2="-13.4999933317305,25.0666627613704"
+                    Point3="-13.4999933317305,29.0666627613704" />
+                  <mssgle:LineSegment
+                    End="-13.4999933317305,42.6333255227407" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="530.666671286027,855.966658274929">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57.9333253832664"
+              Start="0,0"
+              End="0,50.4333253832664">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.4333253832664" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="726.416674508403,1101.56665032486">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="107.416660091529,13.6666669766103"
+              Start="0,0"
+              End="99.916660091529,13.6666669766103">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="49.7083300457645,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="49.7083300457645,0"
+                    Point2="53.7083300457645,0"
+                    Point3="53.7083300457645,4" />
+                  <mssgle:LineSegment
+                    End="53.7083300457645,9.66666697661026" />
+                  <mssgle:CubicBezierSegment
+                    Point1="53.7083300457645,9.66666697661026"
+                    Point2="53.7083300457645,13.6666669766103"
+                    Point3="57.7083300457645,13.6666669766103" />
+                  <mssgle:LineSegment
+                    End="99.916660091529,13.6666669766103" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="1020.83333459993,921.899983968139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.2500054078802,-41.666659460465"
+              Start="0,0"
+              End="20.2500054078802,-34.166659460465">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-16.8333297302325" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-16.8333297302325"
+                    Point2="0,-20.8333297302325"
+                    Point3="4,-20.8333297302325" />
+                  <mssgle:LineSegment
+                    End="16.2500054078802,-20.8333297302325" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.2500054078802,-20.8333297302325"
+                    Point2="20.2500054078802,-20.8333297302325"
+                    Point3="20.2500054078802,-24.8333297302325" />
+                  <mssgle:LineSegment
+                    End="20.2500054078802,-34.166659460465" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="1041.08334000781,493.566657841007">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-45.9999928474426,-33.3333237250646"
+              Start="0,0"
+              End="-45.9999928474426,-25.8333237250646">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-12.6666618625323" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-12.6666618625323"
+                    Point2="0,-16.6666618625323"
+                    Point3="-4,-16.6666618625323" />
+                  <mssgle:LineSegment
+                    End="-41.9999928474426,-16.6666618625323" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-41.9999928474426,-16.6666618625323"
+                    Point2="-45.9999928474426,-16.6666618625323"
+                    Point3="-45.9999928474426,-20.6666618625323" />
+                  <mssgle:LineSegment
+                    End="-45.9999928474426,-25.8333237250646" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Test1\Foreach Loop Container\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\Test1\Foreach Loop Container\Data Flow Task\ODBC Destination"
+          TopLeft="217.916663419455,174.199996885061" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Test1\Foreach Loop Container\Data Flow Task\Flat File Source"
+          TopLeft="121.249998193234,36.3999993491173" />
+        <EdgeLayout
+          Id="Package\Test1\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="197.249998193234,79.066666015784">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="102.666665226221,95.1333308692774"
+              Start="0,0"
+              End="102.666665226221,87.6333308692774">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5666654346387" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.5666654346387"
+                    Point2="0,47.5666654346387"
+                    Point3="4,47.5666654346387" />
+                  <mssgle:LineSegment
+                    End="98.6666652262211,47.5666654346387" />
+                  <mssgle:CubicBezierSegment
+                    Point1="98.6666652262211,47.5666654346387"
+                    Point2="102.666665226221,47.5666654346387"
+                    Point3="102.666665226221,51.5666654346387" />
+                  <mssgle:LineSegment
+                    End="102.666665226221,87.6333308692774" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
